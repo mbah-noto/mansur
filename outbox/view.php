@@ -1,4 +1,3 @@
-<h2>Outbox (Surat Keluar)</h2>
 <table class="table table-striped">
   <tr>
 	<th>No</th>

@@ -1,11 +1,11 @@
-<h2>Inbox (Surat Masuk)</h2>
 <table class="table table-striped">
   <tr>
 	<th>No</th>
 	<th>Tanggal Masuk</th>
 	<th>Nomor Surat</th>
 	<th>Asal</th>
-	<th>Isi Surat</th>  
+	<th>Isi Surat</th>
+	<th>Kategori</th>  
   </tr>
 	<?php
 	$no=0;
@@ -18,7 +18,8 @@
 		<td><?php echo $view['tgl_terima']?></td>
 		<td><?php echo $view['no_surat_masuk']?></td>
 		<td><?php echo $view['asal_surat_masuk']?></td>
-		<td><?php echo $view['hal_surat_masuk']?></td>		
+		<td><?php echo $view['hal_surat_masuk']?></td>
+		<td><?php echo $view['kategori_surat_masuk']?></td>		
 		</tr>		
 		<?php
 	}
