@@ -9,7 +9,7 @@
   </tr>
 	<?php
 	$no=0;
-	$sql = mysql_query("SELECT * FROM surat_masuk");
+	$sql = mysql_query("SELECT * FROM surat_masuk ORDER BY id_surat_masuk DESC");
 	while($view = mysql_fetch_array($sql)) {
 		$no++;
 		?>

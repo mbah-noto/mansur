@@ -66,8 +66,9 @@
 	<?php
 
 	include "config/koneksi.php";	
-	
-	switch($_GET['page']) {
+	//Untuk pagenya
+  $page = isset($_GET['page']) ? $_GET['page'] : null;
+	switch($page) {
 		case 'inbox':
 		include "inbox/view.php";
 		break;
