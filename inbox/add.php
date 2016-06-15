@@ -1,4 +1,4 @@
-<form class="form-horizontal" action="?page=inbox_save" method="POST">
+<form class="form-horizontal" action="?page=inbox_save" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="AsalSurat" class="col-sm-2 control-label">Asal Surat</label>
     <div class="col-sm-10">
@@ -11,6 +11,12 @@
       <input type="text" class="form-control" name="nomor" placeholder="Nomor Surat Masuk">
     </div>
   </div>
+  <div class="form-group">
+  <label for="JudulSurat" class="col-sm-2 control-label">Judul Surat</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" name="judul" placeholder="Judul Surat Masuk">
+  </div>
+</div>
     <div class="form-group">
     <label for="HalSurat" class="col-sm-2 control-label">Isi Surat</label>
     <div class="col-sm-10">
@@ -20,7 +26,7 @@
       <div class="form-group">
     <label for="CategorySurat" class="col-sm-2 control-label">Kategori Surat</label>
     <div class="col-sm-10">
-    <select class="col-xs-3 form-control" name="kategori"> 
+    <select class="col-xs-3 form-control" name="kategori">
         <option selected="selected">Pilih Kategori</option>
         <option>Undangan</option>
         <option>Pemberitahuan</option>
@@ -32,8 +38,8 @@
   <div class="form-group">
   <label for="filesurat" class="col-sm-2 control-label">File Surat</label>
   <div class="col-sm-10">
-	<input type="file" class="form-control" name="Surat" data-toggle="tooltip" data-placement="top" title="Masukan scan surat anda">			
-	</div>  
+	<input type="file" class="form-control" name="arsip" data-toggle="tooltip" data-placement="top" title="Masukan scan surat anda">
+	</div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
